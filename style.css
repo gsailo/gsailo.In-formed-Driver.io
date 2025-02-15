@@ -1,0 +1,68 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    padding: 10px 20px;
+    border-bottom: 2px solid #333;
+}
+
+h1 {
+    color: #ffffff;
+    padding-left: 10px;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input, select, textarea, button {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+input, select, textarea, button, label {
+    box-sizing: border-box;
+}
+
+input[type="text"] {
+    width: 12em;
+    border: 5px solid green;
+}
+
+
+label {
+    display: inline-block;
+    width: 20em;
+    background-color: #f1f1f1;
+}
+
+[required] {
+    border: 5px dashed red;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    display: inline;
+}
+
+fieldset {
+    position: relative;
+    width: 600px;
+}
+
+.toppings_right {
+    position: absolute;
+    top: 5%;
+    left: 170px;
+    width: 200px;
+}
+
+.toppings_right label {
+    display: block;
+}
+
+label[for="customerDeliveryTime"]::before {
+    content: "\1F55E";
+}
+  
