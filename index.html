@@ -8,65 +8,69 @@
     </head>
 
     <body>
+        
         <header>
             <img src="mercedes2.jpg" alt="Mercedes sport car" width="90" height="50">
             <h1>Ideal Car</h1>
         </header>
+        <main>
+            <form id="idealcar" acion="#" method="get">
+          
+                <fieldset>
+                    <legend>Car Details</legend>
+                    <label>Manufacturer:</label>
+                    <select id="manufacturer" name="manufacturer" size="4" style="width: 300px">
+                        <option value="Mercedes">Mercedes</option>
+                        <option value="Lamborghini">Lamborghini</option>
+                        <option value="Bugatti">Bugatti</option>
+                        <option value="Ferrari">Ferrari</option>
+                        <option value="McLaren">McLaren</option>
+                    </select>
+                    <br /><br />
+                    
+                    <label for="boxColour">Select Colour:
+                    <input type="color" id="boxColour" name="boxColour"/>
+                    </label>
+                    <br /><br />
+                    <label>Drive Options:</label><br>
+                    <input type="checkbox" id="4wheelDrive" name="drive" value="4wheelDrive"/>
+                    <label for="4wheelDrive">4-Wheel Drive</label><br />
+                    <input type="checkbox" id="frontWheelDrive" name="drive" value="frontWheelDrive"/>
+                    <label for="frontWheelDrive">Front-Wheel Drive</label><br />
+                    <input type="checkbox" id="rearWheelDrive" name="drive" value="rearWheelDrive"/>
+                    <label for="rearWheelDrive">Rear-Wheel Drive</label><br><br>
 
-        <form id="idealcar" acion="#" method="get">
+                    <label for="license">License Plate:</label>
+                    <input type="text" id="license" name="license" placeholder="Enter license plate number"><br><br>
 
-            <fieldset>
-                <legend>Car Details</legend>
-                <label>Manufacturer:</label>
-                <select id="manufacturer" name="manufacturer" size="4" style="width: 300px">
-                    <option value="Mercedes">Mercedes</option>
-                    <option value="Lamborghini">Lamborghini</option>
-                    <option value="Bugatti">Bugatti</option>
-                    <option value="Ferrari">Ferrari</option>
-                    <option value="McLaren">McLaren</option>
-                </select>
-                <br /><br />
+                    <label for="comment">Comments: <br>
+                        <textarea id="comment" name="comment" placholder="Comments"></textarea>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Options</legend>
+
+                    <label for="fuelType">Fuel Type:</label>
+                    <select id="fuelType" name="fuelType" size="4" style="width: 300px">
+                        <option value="petrol">Petrol</option>
+                        <option value="diesel">Diesel</option>
+                        <option value="electric">Electric</option>
+                        <option value="hybrid">hybird</option>
+                    </select>
+
+                    <label>Transmission Type:</label><br>
+                    <input type="radio" id="transmission" name="transmission" value="manual"/>
+                    <label for="transmission">Manual</label><br />
+                    <input type="radio" id="transmission" name="transmission" value="automatic"/>
+                    <label for="transmission">Automatic</label><br />
+                </fieldset>
                 
-                <label for="boxColour">Select Colour:
-                <input type="color" id="boxColour" name="boxColour"/>
-                </label>
-                <br /><br />
-                <label>Drive Options:</label><br>
-                <input type="checkbox" id="4wheelDrive" name="drive" value="4wheelDrive"/>
-                <label for="4wheelDrive">4-Wheel Drive</label><br />
-                <input type="checkbox" id="frontWheelDrive" name="drive" value="frontWheelDrive"/>
-                <label for="frontWheelDrive">Front-Wheel Drive</label><br />
-                <input type="checkbox" id="rearWheelDrive" name="drive" value="rearWheelDrive"/>
-                <label for="rearWheelDrive">Rear-Wheel Drive</label><br><br>
-
-                <label for="license">License Plate:</label>
-                <input type="text" id="license" name="license" placeholder="Enter license plate number"><br><br>
-
-                <label for="comment">Comments: <br>
-                    <textarea id="comment" name="comment" placholder="Comments"></textarea>
-                </label>
-            </fieldset>
-
-            <fieldset>
-                <legend>Additional Options</legend>
-
-                <label for="fuelType">Fuel Type:</label>
-                <select id="fuelType" name="fuelType" size="4" style="width: 300px">
-                    <option value="petrol">Petrol</option>
-                    <option value="diesel">Diesel</option>
-                    <option value="electric">Electric</option>
-                    <option value="hybrid">hybird</option>
-                </select>
-
-                <label>Transmission Type:</label><br>
-                <input type="radio" id="transmission" name="transmission" value="manual"/>
-                <label for="transmission">Manual</label><br />
-                <input type="radio" id="transmission" name="transmission" value="automatic"/>
-                <label for="transmission">Automatic</label><br />
-            </fieldset>
+                <input type="submit" class="process" value="Submit">
+        
+            </form>
             
-            <input type="submit" class="process" value="Submit">
-       
-        </form>
+        </main>
     </body>
+
 </html>
