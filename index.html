@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    <body>
+    <form>
+        <!-- input tag of type text -->
+        <label for="customerName">Customer Name
+            <input type="text" 
+                id="customerName" 
+                name="customerName" 
+                placeholder="xxxxxxxxx"
+                size="25" 
+                required 
+                minlength="1" 
+                maxlength="60" 
+                pattern="[a-zA-Z]+([\s][a-zA-Z]+)*"/> 
+        </label><br />
+
+        <!-- input tag of type email -->
+        <label for="customerEmail">Customer E-Mail
+            <input type="email" 
+                id="customerEmail" 
+                name="customerEmail" 
+                placeholder="xxxxxxxx@xxxxxx.com"
+                size="25" 
+                required 
+                minlength="1" 
+                maxlength="60"/>
+        </label>
+        <br />
+
+        <!-- input tag of type number -->
+        <label>Please create and add a unique id to reference your order</label><br />
+        <label for="customerOrderId">Customer Order Id Number
+            <input type="number" 
+                id="customerOrderId" 
+                name="customerOrderId" 
+                placeholder="1234"
+                size="5" 
+                required 
+                minlength="1" 
+                maxlength="5"
+                min="-1" 
+                max="15" 
+                step="3"/>
+        </label>
+        <br />
+
+        <!-- text area tag -->
+        <label for="customerComments">Your comments and notes for delivery
+            <textarea id="customerComments"
+                name="customerComments"
+                placeholder="comments">
+            </textarea>
+        </label>
+        <br />
+
+        <!-- date input tag -->
+        <label for="customerBirthday">Enter your birthday for alcohol orders
+            <input type="date"
+                id="customerBirthday"
+                min="1899-12-01"
+                max="2005-12-01"/>
+        </label>
+        <br />
+
+        <!--input tag of type time -->
+        <label for="customerDeliveryTime">Requested Delivery Time
+            <input type="time"
+                id="customerDeliveryTime"
+                name="customerDeliveryTime"/>
+        </label>
+
+        <!--radio buttons-->
+        <br /><br />
+        <input type="radio"
+            id="smallOrder"
+            name="orderSize"
+            value="smallOrder"/>
+        <label for="smallOrder">Small</label><br />
+        <input
+            type="radio"
+            id="mediumOrder"
+            name="orderSize"
+            value="mediumOrder"
+            checked/>
+        <label for="mediumOrder">Medium</label>
+        <br />
+        <input
+            type="radio"
+            id="largeOrder"
+            name="orderSize"
+            value="largeOrder"/>
+        <label for="largeOrder">Large</label>
+        
+        <!-- input tag of type submit -->
+        <br /><br />
+
+        <!--checkboxes -->
+        <br /><br />
+        <input
+            type="checkbox"
+            id="parmesan"
+            name="cheese"
+            value="parmesan"/>
+        <label for="parmesan">Parmesan</label><br />
+        <input
+            type="checkbox"
+            id="reggiano"
+            name="cheese"
+            value="regianno"
+            checked/>
+        <label for="reggiano">Reggiano</label>
+        <br/>
+        <input
+            type="checkbox"
+            id="mozarella"
+            name="cheese"
+            value="mozarella"/>
+        <label for="mozarello">Mozarello</label>
+        
+        <!-- input tag of type submit -->
+        <br /><br />
+        <label for="toppings">Toppings
+            <select id="toppings" name="toppings" size="4" style="width: 300px">
+            <optgroup label="Meats, $2 Extra">
+                <option value="sausage">Sausage</option>
+                <option value="ham">Ham</option>
+                <option value="pepperoni">Pepperoni</option>
+            </optgroup>
+            <optgroup label="Veggies - No additional charge">
+                <option value="peppers">Peppers</option>
+                <option value="pineapple">Pineapple</option>
+                <option value="spinach">Spinach</option>
+            </optgroup>
+            </select>
+        </label>
+        <fieldset>
+            <legend>Colourize Your Pizza Box</legend>
+            <label for="boxColour">Pick Your Colour
+            <input type="color" id="boxColour" name="boxColour" />
+            </label>
+        </fieldset>
+        <input type="submit" id="process" />
+        </form>
+    </body>
+    <script>
+        // const alertEntry = (event) => {
+        //   let control = document.querySelector("#customerName");
+        //   event.preventDefault();
+        //   console.log(control);
+        //   console.log(control.value);
+        // };
+        // let submitButton = document.querySelector("#process");
+        // submitButton.addEventListener("click", alertEntry);
+    </script>
+</html>
